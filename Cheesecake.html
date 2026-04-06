@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lemon Blueberry Cheesecake Soft Cookies</title>
+
+<style>
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+  background: url("blueberry.png");
+}
+
+h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* content box to make text readable */
+.content-box {
+  background-color: rgba(210, 180, 140, 0.85); /* pastel brown */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  color: #2b1b12; /* darker brown text for readability */
+}
+
+/* Lemon falling style */
+.lemon {
+  position: fixed;
+  top: -50px;
+  font-size: 28px;
+  pointer-events: none;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* link style */
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+</style>
+
+<script>
+function lemonRain(event) {
+  event.preventDefault();
+
+  for (let i = 0; i < 20; i++) {
+    let lemon = document.createElement("div");
+    lemon.classList.add("lemon");
+    lemon.innerHTML = "🍋";
+
+    lemon.style.left = Math.random() * window.innerWidth + "px";
+    lemon.style.animationDuration = (Math.random() * 1 + 0.5) + "s";
+
+    document.body.appendChild(lemon);
+
+    setTimeout(() => lemon.remove(), 1200);
+  }
+
+  setTimeout(() => {
+    window.location.href = "Lemon.html";
+  }, 900);
+}
+</script>
+
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+
+<!-- LEFT MENU -->
+<td width="210" valign="top" class="content-box">
+
+<br>
+<font color="#483248" size="4"><b>Desserts Recipes</b></font><br>
+<br>
+
+<a href="Cheesecake.html">    
+Lemon Blueberry Cheesecake Soft Cookies
+</a><br><br>
+
+<a href="Lemon.html" onclick="lemonRain(event)">
+Lemon Cake
+</a>
+
+</td>
+
+<!-- MAIN CONTENT -->
+<td class="content-box">
+
+<h2>Lemon Blueberry Cheesecake Soft Cookies</h2>
+
+<p><big>Ingredients:</big></p>
+
+<p><b>🧀 Cheesecake Filling 🧀</b></p>
+3/4 cup of Cream Cheese<br>
+1-1/2 cup of Powdered Sugar<br>
+1 drop of Vanilla Essence<br>
+
+<p><b>🫐 Blueberry Jam 🫐</b></p>
+1-1/2 cup of Blueberries<br>
+1-1/2 cup of Powdered Sugar<br>
+
+<p><b>🍪 Cookie Dough 🍪</b></p>
+1/3 cup of Butter<br>
+3/4 cup of Cake Flour<br>
+1/3 cup of Powdered Sugar<br>
+1 tsp of Baking Powder<br>
+1 tsp of Baking Soda<br>
+1 tbsp of Lemon Zest <br>
+1-1/2 tbsp of a beaten Egg<br>
+1 drop of Vanilla Essence<br>
+A pinch of Salt<br>
+
+<p><big><b>Cheesecake Filling Preparation:</b></big></p>
+
+<p><i>Whisk softened cream cheese with powdered sugar and vanilla essence.</p>
+<p>Scoop into 5 small blobs (about 1 tbsp each).</p>
+<p>Freeze for 15-20 minutes.</i></p>
+
+<p><big><b>Blueberry Jam Preparation:</b></big></p>
+
+<p><i>Put blueberries and powdered sugar in a pan.</p>
+<p>Cook on medium heat, stir occasionally.</p>
+<p>Mash slightly and cook until thick (around 10-15 minutes).</p>
+<p>Let it cool.</i></p>
+
+<p><big><b>Cookies Preparation:</b></big></p>
+
+<p><i>Combine cake flour, baking powder, baking soda and salt in a bowl.</p>
+<p>In another bowl, rub sugar and lemon zest.</p>
+<p>Add butter into sugar and lemon zest bowl, whisk until creamy.</p>
+<p>Add egg and vanilla essence and whisk until well combined.</p>
+<p>Add the dry ingredients into the wet ingredients, mix until just combined.</p>
+<p>Fold in blueberry jam (don't overmix).</p>
+<p>Divide dough into 5 portions, flatten each piece.</p>
+<p>Place frozen cream cheese in center, wrap the dough around it and seal.</p>
+<p>Flatten slightly (not too thin).</p>
+<p>Place parchment paper inside the air fryer.</p>
+<p>Place 2 or 3 cookies on the parchment paper (depending on size).</p>
+<p>Bake at 160°C for 5-7 minutes.</p>
+<p>Let it cool, and enjoy the cookies!</i></p>
+
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
